@@ -9,15 +9,14 @@ class Solution
      */
     function removeElement(&$nums, $val)
     {
-        for ($i = 0; $i < count($nums); $i++) {
-            echo $i;
+        $arrLength = count($nums);
+
+        for ($i = 0; $i < $arrLength; $i++) {
             if ($nums[$i] === $val) {
-                // echo $nums[$i];
-                // echo $i;
                 unset($nums[$i]);
             }
         }
-        // $nums = array_values($nums);
+
         return count($nums);
     }
 }
